@@ -1,0 +1,26 @@
+// Piggy Converter sample script file.
+
+do set "memo" to "memo";
+
+if "url" match exactly "http://exactly.com" do ignore record;
+
+if "url" match partialy "partialy.com"
+	do get regex value "^(\\d*)_(\\w*)$" from "userid"
+		put 1 to "numid"
+				2 to "userid"
+	and set "memo" to "get regex";
+
+if "url" match regex ".*regex\\.com/?.*"
+	do get url parameter value from "url"
+	 put "nid" to "numid"
+	     "uid" to "userid";
+
+if not "url" is valid url do ignore record;
+
+if "url" match partialy "http://decodeme.com" do decode url encoded "url";
+
+if "url" match exactly "http://exactlookup.com" and "userid" match partialy "user"
+	do lookup exactly "userid" from list "lookup.list" put value to "numid";
+
+if "url" match exactly "http://partialylookup.com" or "url" match exactly "http://partialylookup2.com"
+	do lookup partialy "userid" from list "lookup.list" put value to "numid";

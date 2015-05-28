@@ -1,0 +1,13 @@
+.checkstyle
+.classpath
+.gradle
+.project
+.settings
+*.sublime-project
+*.sublime-workspace
+bin
+build
+personal
+script.pc
+tmp
+src/main/java/org/rhase/piggyconverter/generated

@@ -1,0 +1,7 @@
+2015-01-01T00:00:00.000Z	aabb	http://subdomain.partialy.com	0011	get regex
+2015-01-01T00:00:00.000Z	aabc	http://subdomain.regex.com?nid=0012&uid=aabc	0012	memo
+2015-01-01T00:00:00.000Z	user01	http://decodeme.com?text=テスト		memo
+2015-01-01T00:00:00.000Z	user02	http://exactlookup.com	2	memo
+2015-01-01T00:00:00.000Z	hoge	http://exactlookup.com		memo
+2015-01-01T00:00:00.000Z	test_user03	http://partialylookup.com	3	memo
+2015-01-01T00:00:00.000Z	fugahoge	http://partialylookup2.com	0	memo
